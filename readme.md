@@ -7,13 +7,13 @@
 
 **Installation:**
 ```js
-npm i aoi-fb
+npm i fb-aoi
 ```
 <br>
 
 **Calling:**
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 ```
 <br>
 
@@ -66,7 +66,7 @@ Error documentation can be found on [ErrorDocs](#ErrorDocs)
 ## comment
 Before we proceed, make sure that you have an existing Facebook page in your account.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // Paste your EAAD6V7 token here
 const access = await fb.getPage(""); 
@@ -84,7 +84,7 @@ for (var page of access) {
 ```
 If you don't have a Facebook token, then
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // First, we need to get your Facebook token by logging into your account 
 const email = "615594487example";
@@ -111,7 +111,7 @@ const access = await fb.getPage(token.EAAD6V7);
 ## createPage
 This is just an experimental feature and still has many bugs in it.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // Use your appstate
 const facebook = await createPage(appstate);
@@ -119,7 +119,7 @@ const facebook = await createPage(appstate);
 ```
 If you don't have an appstate, then we will get it by logging in.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // First, we need to login to get your appstate
 const email = "615594487example";
@@ -137,7 +137,7 @@ const facebook = await createPage(appstate);
 ## download
 Get Facebook thumbnail, title, SD, and HD URL.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // Paste the Facebook video/reels URL
 const facebook = await fb.download("");
@@ -150,7 +150,7 @@ const facebook = await fb.download("");
 ## follow
 Before we proceed, make sure that you have an existing Facebook page in your account.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // Paste your EAAD6V7 token here
 const access = await fb.getPage(""); 
@@ -166,7 +166,7 @@ for (var page of access) {
 ```
 If you don't have a Facebook token, then
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // First, we need to get your Facebook token by logging into your account 
 const email = "615594487example";
@@ -192,7 +192,7 @@ const access = await fb.getPage(token.EAAD6V7);
 ## getKey
 It will get all of your Facebook tokens.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // First, we need to log in to your account 
 const email = "615594487example";
@@ -207,7 +207,7 @@ const token = await fb.getKey(email, password);
 ## getPage
 Make sure you have an existing Facebook page in your account.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // Paste your EAAD6V7 token here
 const facebook = await fb.getPage(""); 
@@ -215,7 +215,7 @@ const facebook = await fb.getPage("");
 ```
 If you don't have a Facebook token, then
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // First, we need to get your Facebook token by logging into your account 
 const email = "615594487example";
@@ -232,7 +232,7 @@ const facebook = await fb.getPage(token.EAAD6V7);
 ## post
 Gain access to your account by posting a text.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // We will only use your token
 const facebook = await post({
@@ -243,7 +243,7 @@ console.log(facebook);
 ```
 If you don't have a Facebook token, then
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // First, we need to get your Facebook token by logging into your account 
 const email =
@@ -265,7 +265,7 @@ console.log(facebook);
 ## getAppstate
 It can be used for your Messenger bot.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // We're logging into your account
 const email = "615594487example";
@@ -280,7 +280,7 @@ const facebook = await getAppstate(email, password);
 ## share
 Spam share using your account.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 await fb.share({
     length: 1, // How many shares you want
@@ -290,7 +290,7 @@ await fb.share({
 ```
 If you don't have a Facebook token, then
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // First, we need to get your Facebook token by logging into your account 
 const email = "615594487example";
@@ -309,7 +309,7 @@ await fb.share({
 
 ## stalk
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 const uid = ""; // Paste some Facebook user ID
 const token = ""; // Paste your EAAD6V7 token
@@ -319,7 +319,7 @@ const facebook = await fb.stalk(uid, token);
 ```
 If you don't have a Facebook token, then
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // First, we need to get your Facebook token by logging into your account 
 const email = "615594487example";
@@ -337,7 +337,7 @@ const facebook = await fb.stalk(uid, token.EAAD6V7);
 ## getToken
 Appstate method for Messenger bot.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // Assuming that you have this 
 const appstate = require("./appstate.json");
@@ -353,7 +353,7 @@ const facebook = await fb.getToken(appstate);
 ## gpt
 Unlimited and detailed result.
 ```js
-const fb = require("aoi-fb");
+const fb = require("fb-aoi");
 
 // Prompt something
 const facebook = await fb.gpt("");

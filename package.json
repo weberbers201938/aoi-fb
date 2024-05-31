@@ -1,0 +1,29 @@
+{
+  "name": "fbkey",
+  "version": "1.0.1",
+  "description": "your key to access on facebook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.facebook.com/LeiamNashRebrth"
+  },
+  "keywords": [
+    "facebook",
+    "ghraph",
+    "api",
+    "meta",
+    "tool",
+    "scrap",
+    "wrap"
+  ],
+  "author": "LeiamNash",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cheerio": "^1.0.0-rc.12",
+    "request": "^2.88.2"
+  }
+}
